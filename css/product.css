@@ -1,0 +1,97 @@
+.product {
+  background: url(trendy-fashionable-couple-posing), rgb(242, 240, 241);
+}
+
+.product-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card img {
+  width: 450px;
+}
+
+.product-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.product-info h3 {
+  color: rgb(0, 0, 0);
+  font-family: Integral CF;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.product-info p {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.prices-info {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.prices-info p:first-child {
+  color: rgb(0, 0, 0);
+  font-family: Satoshi;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.prices-info p:nth-child(2) {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: Satoshi;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: line-through;
+}
+
+.prices-info p:last-child {
+  border-radius: 62px;
+  color: rgb(255, 51, 51);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 10px 30px;
+  background: rgba(255, 51, 51, 0.1);
+}
+
+.about-product {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-product p span {
+  border-radius: 62px;
+  color: rgb(51, 255, 129);
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 10px 30px;
+  background: rgba(255, 51, 51, 0.1);
+}

@@ -1,0 +1,548 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* text-decoration: none !important; */
+  list-style: none;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ! header */
+
+.message {
+  background-color: #000;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.message-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+}
+
+.message-wrapper a {
+  color: rgb(255, 255, 255);
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.message-close {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.message-close img {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 37px 0;
+  border-bottom: 2px dotted #000;
+}
+
+.logo {
+  color: rgb(0, 0, 0);
+  font-family: Integral CF;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.list {
+  display: flex;
+  gap: 24px;
+}
+
+.list-item-link {
+  color: rgb(0, 0, 0);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.search-input {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  border-radius: 62px;
+  padding: 10px 20px;
+  border: none;
+  background: rgb(240, 240, 240);
+  width: 577px;
+}
+.nav-icons {
+  display: flex;
+  gap: 18px;
+}
+/* ! header */
+
+/* ! herro */
+.herro {
+  background: url(trendy-fashionable-couple-posing), rgb(242, 240, 241);
+}
+
+.herro-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.wrapepr-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 22px;
+  align-items: start;
+}
+
+.wrapepr-info h2 {
+  color: rgb(0, 0, 0);
+  font-family: Integral CF;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.wrapepr-info p {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.wrapepr-info a {
+  border-radius: 62px;
+  color: rgb(255, 255, 255);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 10px 54px;
+
+  background: rgb(0, 0, 0);
+}
+.wrapepr-face {
+  width: 50%;
+}
+
+.wrapepr-face img {
+  width: 100%;
+  height: 663px;
+  object-fit: cover;
+}
+.result-brand {
+  display: flex;
+  gap: 10px;
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-card h3 {
+  color: rgb(0, 0, 0);
+  font-family: Satoshi;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.result-card p {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+/* ! herro */
+/* ! brand */
+
+.brands {
+  background: rgb(0, 0, 0);
+}
+
+.brands-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 42px 0;
+}
+/* ! brand */
+
+/* ! new products */
+.new-card {
+  width: 296px;
+  padding: 10px;
+}
+.bgImg {
+  background: url(trendy-fashionable-couple-posing), rgb(242, 240, 241);
+  border-radius: 10px;
+}
+.new-card img {
+  border-radius: 30px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.new-card h3 {
+  color: rgb(0, 0, 0);
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.prices p:first-child {
+  color: rgb(0, 0, 0);
+  font-family: Satoshi;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.prices p:nth-child(2) {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Satoshi;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: line-through;
+  text-decoration: line-through;
+}
+
+.prices p:last-child {
+  border-radius: 62px;
+  background: rgba(255, 51, 51, 0.1);
+  color: rgb(255, 51, 51);
+  font-family: Satoshi;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.btn {
+  background-color: #000;
+  width: 100%;
+
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.new-products h2 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Integral CF;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 72px 0;
+}
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+/* ! new products */
+
+/* ! top selling */
+
+.top-sell h2 {
+  color: rgb(0, 0, 0);
+  font-family: Integral CF;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 64px 0;
+}
+.tops-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+/* ! top selling */
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card {
+  position: relative;
+}
+
+.discountPercentage {
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
+/*  All Products */
+
+.all-products h2 {
+  color: rgb(0, 0, 0);
+  font-family: Integral CF;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 72px 0;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.categories-wrapper {
+  border-radius: 40px;
+  padding: 20px;
+  background: rgb(240, 240, 240);
+}
+.categories-wrapper h2 {
+  color: rgb(0, 0, 0);
+  font-family: Integral CF;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 32px 0;
+}
+
+.category-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.category-card {
+  width: 250px;
+  cursor: pointer;
+  border: 1px solid #504a4a;
+  background: #fff;
+  /* position: relative; */
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  /* display: flex; */
+}
+
+.category-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.category-card h3 {
+  /* position: absolute; */
+  left: 36px;
+  top: 0;
+  color: rgb(0, 0, 0);
+  font-family: Satoshi;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* connect */
+
+.connect {
+  border-radius: 20px;
+  background: rgb(0, 0, 0);
+  padding: 36px 64px;
+  margin-top: 50px;
+}
+
+.connect-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.connect-wrapper h2 {
+  color: rgb(255, 255, 255);
+  font-family: Integral CF;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 50%;
+}
+
+.connect-input input {
+  border-radius: 62px;
+  padding: 14px 52px;
+  border: none;
+  width: 349px;
+  background: rgb(255, 255, 255);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 30px 0;
+  gap: 20px;
+  border-bottom: 2px solid #504a4a;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 15px;
+}
+
+.footer-item p {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.footer-item h3 {
+  color: rgb(0, 0, 0);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.footer-item a {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+#logo-footer {
+  color: rgb(0, 0, 0);
+  font-family: Integral CF;
+  font-size: 33.45px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.social-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.social-footer i {
+  font-size: 30px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0 88px 0;
+}
+
+.footer-bottom p {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: right;
+}
