@@ -4,6 +4,7 @@ const messageClose = document.querySelector(".message-close");
 const counters = document.querySelectorAll(".counter");
 const productsList = document.querySelector(".products-list");
 const topsList = document.querySelector(".tops-list");
+const commentWrapper = document.querySelector(".comment-wrapper");
 function getCard(el) {
   return `<div class="new-card">
         <div class = "bgImg">  <img src="${el.images[0]}" alt="ads" /></div>
@@ -74,10 +75,6 @@ getData("https://dummyjson.com/products", (products) => {
   topSelling.slice(0, 4).map((el) => {
     topsList.innerHTML += getTopPruducts(el);
   });
-
-  let categories = data.map((el) => {
-    console.log(el.category);
-  });
 });
 
 messageClose.addEventListener("click", () => {
@@ -118,3 +115,29 @@ const observer = new IntersectionObserver(
 counters.forEach((counter) => {
   observer.observe(counter);
 });
+
+//  get comments
+
+function getSomeComments(el) {
+  return `
+  <div class = "comment-card">
+  <h3>${el.name}</h3>
+  <p>${el.body} </p>
+  <a href="mailto:${el.email}">${el.email}</a>
+
+  <span class = "time-comment">21/12/2023</span>
+  </div>
+  `;
+}
+
+getDataComments("https://jsonplaceholder.typicode.com/comments")
+  .then((comments) => {
+    comments.slice(0, 4).map((el) => {
+      console.log(el);
+
+      commentWrapper.innerHTML += getSomeComments(el);
+    });
+  })
+  .catch((err) => {
+    console.log(err);
+  });
