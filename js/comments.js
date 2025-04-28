@@ -1,3 +1,7 @@
+const commentsAll = document.querySelector(".comments-all");
+const searchComments = document.querySelector(".search-comments");
+
+let search = "";
 function getDataComments(url) {
   let promise = new Promise((resolve, reject) => {
     let request = new XMLHttpRequest();
@@ -21,12 +25,32 @@ function getDataComments(url) {
 
 const getAllComments = async () => {
   try {
-    let res = await getDataComments(
-      "https://jsonplaceholder.typicode.com/comments"
+    commentsAll.innerHTML = "Loading...";
+    let comments = await getDataComments(
+      `https://jsonplaceholder.typicode.com/comments?q=${search}`
     );
-    console.log(res);
+    commentsAll.innerHTML = "";
+
+    if (comments.length) {
+      comments.map((el) => {
+        commentsAll.innerHTML += ` <div class = "comment-card">
+  <h3>${el.id}.${el.name}</h3>
+  <p>${el.body} </p>
+  <a href="mailto:${el.email}">${el.email}</a>
+
+  <span class = "time-comment">21/12/2023</span>
+  </div>`;
+      });
+    } else {
+      commentsAll.innerHTML = "Not Found";
+    }
   } catch (error) {
     console.log(error);
   }
 };
 getAllComments();
+
+searchComments.addEventListener("keyup", function () {
+  search = this.value;
+  getAllComments();
+});

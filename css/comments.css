@@ -1,0 +1,23 @@
+.comments-all {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.comments-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comments-header h3 {
+  color: rgb(5, 5, 5);
+  font-family: Integral CF;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 40px 0;
+}
